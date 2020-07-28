@@ -1,0 +1,269 @@
+*{
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+/*header start*/
+.header-section {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+	z-index: 99;
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+}
+
+.logo a {
+	display: inline-block;
+}
+
+.nav-menu {
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+}
+
+.nav-menu ul li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 32px;
+	position: relative;
+	z-index: 1;
+}
+
+.nav-menu ul li .dropdown {
+	position: absolute;
+	left: -30px;
+	top: 58px;
+	width: 180px;
+	background: #252525;
+	z-index: 99;
+	text-align: left;
+	padding: 13px 0 20px;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.nav-menu ul li .dropdown li {
+	margin-right: 0;
+	display: block;
+}
+
+.nav-menu ul li .dropdown li a {
+	display: block;
+	text-transform: none;
+	padding: 6px 0 6px 30px;
+	font-weight: 400;
+}
+
+.nav-menu ul li .dropdown li a:after {
+	display: none;
+}
+
+.nav-menu ul li:last-child {
+	margin-right: 0;
+}
+
+.nav-menu ul li.active>a {
+	color: #f36100;
+}
+
+.nav-menu ul li.active>a:after {
+	opacity: 1;
+}
+
+.nav-menu ul li:hover>a {
+	color: #f36100;
+}
+
+.nav-menu ul li:hover>a:after {
+	opacity: 1;
+}
+
+.nav-menu ul li:hover .dropdown {
+	opacity: 1;
+	visibility: visible;
+}
+
+.nav-menu ul li a {
+	color: #ffffff;
+	display: block;
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: "Oswald", sans-serif;
+	padding: 10px 0px;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.nav-menu ul li a:after {
+	position: absolute;
+	left: 0;
+	top: 22px;
+	height: 1px;
+	width: 100%;
+	background: #f36100;
+	content: "";
+	-webkit-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.nav-menu a {
+	color: #ffffff;
+	display: block;
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: "Oswald", sans-serif;
+	padding: 10px 0px;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.nav-menu a:after {
+	position: absolute;
+	left: 0;
+	top: 22px;
+	height: 1px;
+	width: 100%;
+	background: #f36100;
+	content: "";
+	-webkit-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.nav-menu .active a {
+	color: #f36100;
+}
+
+.nav-menu .active a:after {
+	opacity: 1;
+}
+
+.nav-menu a:hover {
+	color: #f36100;
+}
+
+.nav-menu a:hover :after {
+	opacity: 1;
+}
+
+.top-option {
+	text-align: right;
+	padding: 9px 0;
+}
+
+.top-option .to-search {
+	display: inline-block;
+	padding-right: 20px;
+	position: relative;
+}
+
+.top-option .to-search:after {
+	position: absolute;
+	right: 0;
+	top: 5px;
+	height: 15px;
+	width: 1px;
+	background: rgba(255, 255, 255, 0.3);
+	content: "";
+}
+
+.top-option .to-search i {
+	font-size: 16px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.top-option .to-social {
+	display: inline-block;
+}
+
+.top-option .to-social a {
+	display: inline-block;
+	color: #ffffff;
+	font-size: 16px;
+	margin-left: 15px;
+}
+
+.offcanvas-menu-wrapper {
+	display: none;
+}
+
+.canvas-open {
+	display: none;
+}
+
+
+/* hrader end*/
+/*section 1 start*/
+.bgimg{
+	background: url(img/bg1.png);
+	position: absolute;
+	background-size: cover;
+    height: 637px;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+.text1 h1{
+    padding-top: 240px;
+	padding-left: 170px;
+	font-family: 'Oswald', sans-serif;
+}
+strong{
+	color: #ff893e;
+	font-family: 'Oswald', sans-serif;
+}
+
+.tv{
+    padding-top: 100px;
+}
+
+.vid {
+    position: relative;
+    height: 100%;
+}
+
+.vid iframe, .vid a {
+    display: block;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    left: 7.8%;
+    top: 36.4%;
+}
+
+.tv_text{
+	color: #ffffff;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 12%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+	
+}
